@@ -25,12 +25,13 @@ jobs:
         polaris_server_url: ${{ vars.POLARIS_SERVERURL }}
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
         polaris_assessment_types: 'SCA'
-        polaris_test_sca_type: 'SCA-SIGNATURE'
+        #polaris_test_sca_type: 'SCA-SIGNATURE'
         polaris_application_name: evansat-${{ github.event.repository.name }}
         polaris_project_name: ${{ github.event.repository.name }}
         polaris_prComment_enabled: 'true'
+        blackduck_fixpr_useUpgradeGuidance: 'true'
         polaris_reports_sarif_create: 'true'
-        polaris_upload_sarif_report: 'true'
+        #polaris_upload_sarif_report: 'true'
         github_token: ${{ secrets.GITHUB_TOKEN }}
 #    - name: Save Logs
 #      if: always()
