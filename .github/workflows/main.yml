@@ -26,7 +26,7 @@ jobs:
         polaris_access_token: ${{ secrets.POLARIS_ACCESSTOKEN }}
         polaris_assessment_types: 'SCA'
         polaris.test.sca.type: 'SCA-SIGNATURE'
-        polaris_application_name: chuckaude-${{ github.event.repository.name }}
+        polaris_application_name: evansat-${{ github.event.repository.name }}
         polaris_project_name: ${{ github.event.repository.name }}
         polaris_prComment_enabled: 'true'
         polaris_reports_sarif_create: 'true'
