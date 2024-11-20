@@ -30,6 +30,7 @@ jobs:
         polaris_project_name: ${{ github.event.repository.name }}
         polaris_prComment_enabled: 'true'
         blackduck_fixpr_useUpgradeGuidance: 'true'
+        blackduck_args: '--detect.maven.excluded.scopes=test'
         polaris_reports_sarif_create: 'true'
         #polaris_upload_sarif_report: 'true'
         github_token: ${{ secrets.GITHUB_TOKEN }}
